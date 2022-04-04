@@ -7,9 +7,9 @@ const resetButton = document.createElement('button');
 
 //Appending 
 container.appendChild(display);
-container.appendChild(plusButton);
 container.appendChild(minusButton);
 container.appendChild(resetButton);
+container.appendChild(plusButton);
 
 let total = 0;
 

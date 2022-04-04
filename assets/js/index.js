@@ -34,7 +34,7 @@ function reset() {
     display.innerText = total;
 }
 
-let number = 0;
+let number = 5;
 plusButton.addEventListener('click', increase);
 minusButton.addEventListener('click', decrease);
 resetButton.addEventListener('click', reset);

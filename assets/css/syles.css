@@ -1,7 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root{
+    --white: #f1f1f1;
+    --light-gray: #b9b9b9;
+    --gray: #777777;
+    --dark-gray: #55555588;
+    --black: #2B2B2B;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: 'Barlow', Helvetica;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+    flex-direction: column;
+    color: var(--white);
+    gap: 2rem;
+}
+
+.display {
+    font-size: 10rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#container .plusButton, #container .minusButton{
+    border: none;
+    background-color: var(--gray);
+    font-size: 2rem;
+    color: inherit;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+    border: 1px solid var(--white);
+}
+
+#container .resetButton {
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--gray);
+    color: inherit;
+    margin: 25px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 250ms ease-in-out, transform 50ms ease-in-out;
+    border: 1px solid var(--white);
+}
+
+#container .plusButton:hover, #container .minusButton:hover, #container .resetButton:hover {
+    background-color: var(--light-gray);
+}
+
+#container .plusButton:active, #container .minusButton:active, #container .resetButton:active {
+    transform: scale(0.9);
+}

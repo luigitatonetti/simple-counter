@@ -5,6 +5,11 @@ const plusButton = document.createElement('button');
 const minusButton = document.createElement('button');
 const resetButton = document.createElement('button');
 
+display.className = 'display';
+plusButton.className = 'plusButton';
+minusButton.className = 'minusButton';
+resetButton.className = 'resetButton';
+
 //Appending 
 container.appendChild(display);
 container.appendChild(minusButton);
